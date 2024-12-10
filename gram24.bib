@@ -1,0 +1,269 @@
+@Proceedings{gram24,
+    booktitle = {Proceedings of the Geometry-grounded Representation Learning and Generative Modeling Workshop (GRaM)},
+    name = {Geometry-grounded Representation Learning and Generative Modeling Workshop (GRaM) at ICML 2024},
+    shortname = {GRaM Workshop},
+    editor = {Vadgama, Sharvaree and Bekkers, Erik and Pouplin, Alison and Kaba, Sekou-Oumar and Walters, Robin and Lawrence, Hannah and Emerson, Tegan and Kvinge, Henry and Tomczak, Jakub and Jegelka, Stephanie},
+    volume = {251},
+    year = {2024},
+    start = {2024-07-29},
+    end = {2024-07-29},
+    published = {2024-10-12},
+    conference_url = {https://openreview.net/group?id=ICML.cc/2024/Workshop/GRaM},
+    address = {Vienna, Asutria},
+    conference_number = {1}
+}
+
+%preface 0
+@InProceedings{vadgama24,
+    title = {Preface to Geometry-grounded Representation Learning and Generative Modeling (GRaM) Workshop},
+    author = {Vadgama, Sharvaree and Bekkers, Erik and Pouplin, Alison and Kaba, Sekou-Oumar and Walters, Robin and Lawrence, Hannah and Emerson, Tegan and Kvinge, Henry and Tomczak, Jakub and Jegelka, Stephanie},
+    pages = {1-6},
+    abstract = {The Geometry-grounded Representation Learning and Generative Modeling (GRaM) workshop at ICLR 2024 explored the concept of geometric grounding. A representation, method, or theory is grounded in geometry if it can be amenable to geometric reasoning, that is, it abides by the mathematics of geometry. This idea plays a crucial role in developing generative models that understand geometry and can aid in geometric representations. We explored many different aspects of geometric representations at the GRaM Workshop.}
+}
+
+%1
+@InProceedings{moskalev24,
+    title = {SE(3)-Hyena Operator for Scalable Equivariant Learning},
+    author = {Moskalev, Artem and Prakash, Mangal and Liao, Rui and Mansi, Tommaso},
+    pages = {7- 19},
+    abstract = {Modeling global geometric context while maintaining equivariance is crucial for accurate predictions in many fields such as biology, chemistry, or vision. Yet, this is challenging due to the computational demands of processing high-dimensional data at scale. Existing approaches such as equivariant self-attention or distance-based message passing, suffer from quadratic complexity with respect to sequence length, while localized methods sacrifice global information. Inspired by the recent success of state-space and long-convolutional models, in this work, we introduce SE(3)-Hyena operator, an equivariant long-convolutional model based on the Hyena operator. The SE(3)-Hyena captures global geometric context at sub-quadratic complexity while maintaining equivariance to rotations and translations. Evaluated on equivariant associative recall and n-body modeling, SE(3)-Hyena matches or outperforms equivariant self-attention while requiring significantly less memory and computational resources for long sequences. Our model processes the geometric context of 20k tokens x3.5 times faster than the equivariant transformer and allows x175 longer a context within the same memory budget.}
+}
+
+%4
+@InProceedings{choi24,
+    title = {Topology-Informed Graph Transformer},
+    author = {Yun Young Choi and Sun Woo Park and Minho Lee and Youngho Woo},
+    pages = {20- 34 },
+    abstract = {Transformers, through their self-attention mechanisms, have revolutionized performance in Natural Language Processing and Vision. Recently,there has been increasing interest in integrating Transformers with Graph Neural Networks (GNNs) to enhance analyzing geometric properties of graphs by employing global attention mechanisms. A key challenge in improving graph transformers is enhancing their ability to distinguish between isomorphic graphs, which can potentially boost their predictive performance. To address this challenge, we introduce ’Topology-Informed Graph Transformer (TIGT)’, a novel transformer enhancing both discriminative power in detecting graph isomorphisms and the overall performance of Graph Transformers. TIGT consists of four components: (1) a topological positional embedding layer using non-isomorphic universal covers based on cyclic subgraphs of graphs to ensure unique graph representation, (2) a dual-path message-passing layer to explicitly encode topological characteristics throughout the encoder layers, (3) a global attention mechanism, and (4) a graph information layer to recalibrate channel-wise graph features for improved feature representation. TIGT outperforms previous Graph Transformers in classifying synthetic dataset aimed at distinguishing isomorphism classes of graphs. Additionally, mathematical analysis and empirical evaluations highlight our model’s competitive edge over state-of-the-art Graph Transformers across various benchmark datasets.}
+}
+
+%5
+@InProceedings{nguyen24,
+    title = {Alignment of MPNNs and Graph Transformers},
+    author = {Nguyen, Bao and Yodaiken, Anjana and Veli\v{c}kovi\'{c}, Petar},
+    pages = {35-49},
+    abstract = {As the complexity of machine learning (ML) model architectures increases, it is important to understand to what degree simpler and more efficient architectures can align with their complex counterparts. In this paper, we investigate the degree to which a Message Passing Neural Network (MPNN) can operate similarly to a Graph Transformer. We do this by training an MPNN to align with the intermediate embeddings of a Relational Transformer (RT). Throughout this process, we explore variations of the standard MPNN and assess the impact of different components on the degree of alignment. Our findings suggest that an MPNN can align to RT and the most important components that affect the alignment are the MPNN's permutation invariant aggregation function, virtual node and layer normalisation.}
+}
+
+%9
+@inproceedings{chowdhury24,
+    title={Stability Analysis of Equivariant Convolutional Representations Through The Lens of Equivariant Multi-layered {CKN}s},
+    author={Chowdhury, Soutrik Roy},
+    pages={50-64},
+    abstract={In this paper we construct and theoretically analyse group equivariant convolutional kernel networks (CKNs) which are useful in understanding the geometry of (equivariant) CNNs through the lens of reproducing kernel Hilbert spaces (RKHSs). We then proceed to study the stability analysis of such equiv-CKNs under the action of diffeomorphism and draw a connection with equiv-CNNs, where the goal is to analyse the geometry of inductive biases of equiv-CNNs through the lens of reproducing kernel Hilbert spaces (RKHSs). Traditional deep learning architectures, including CNNs, trained with sophisticated optimization algorithms is vulnerable to perturbations, including `adversarial examples'. Understanding the RKHS norm of such models through CKNs is useful in designing the appropriate architecture and can be useful in designing robust equivariant representation learning models.},
+    url={https://openreview.net/forum?id=A9CRCxZ4FU}
+}
+
+%10
+@InProceedings{monteagudo24,
+    title = {Asynchrony Invariance Loss Functions for Graph Neural Networks},
+    author = {Monteagudo-Lago, Pablo and Rosinski, Arielle and Dudzik, Andrew Joseph and Veli{\v{c}}kovi{\'c}, Petar},
+    pages = {65-77},
+    abstract = {A ubiquitous class of graph neural networks (GNNs) operates according to the message-passing paradigm, such that nodes systematically broadcast and listen to their neighbourhood. Yet, these synchronous computations have been deemed potentially sub-optimal as they could result in irrelevant information sent across the graph, thus interfering with efficient representation learning. In this work, we devise self-supervised loss functions biasing learning of synchronous GNN-based neural algorithmic reasoners towards representations that are invariant to asynchronous execution. Asynchrony invariance could successfully be learned, as revealed by analyses exploring the evolution of the self-supervised losses as well as their effect on the learned latent embeddings. Our approach to enforce asynchrony invariance constitutes a novel, potentially valuable tool for graph representation learning, which is increasingly prevalent in multiple real-world contexts.}
+}
+
+%11
+@InProceedings{lindstrom24,
+    title = {A Coding-Theoretic Analysis of Hyperspherical Prototypical Learning Geometry},
+    author = {Lindstr\"{o}m, Martin and Rodr\'iguez-G\'alvez, Borja and Thobaben, Ragnar and Skoglund, Mikael},
+    pages = {78-91},
+    abstract = {Hyperspherical Prototypical Learning (HPL) is a supervised approach to representation learning that designs class prototypes on the unit hypersphere. The prototypes bias the representations to class separation in a scale invariant and known geometry. Previous approaches to HPL have either of the following shortcomings: (i) they follow an unprincipled optimisation procedure; or (ii) they are theoretically sound, but are constrained to only one possible latent dimension. In this paper, we address both shortcomings. To address (i), we present a principled optimisation procedure whose solution we show is optimal. To address (ii), we construct well-separated prototypes in a wide range of dimensions using linear block codes. Additionally, we give a full characterisation of the optimal prototype placement in terms of achievable and converse bounds, showing that our proposed methods are near-optimal.}
+}
+
+%12
+@InProceedings{schopfkuester24,
+    title = {3{D} {S}hape {C}ompletion with {T}est-{T}ime {T}raining},
+    author = {Schopf-Kuester, Michael and L\"{a}hner, Zorah and Moeller, Michael},
+    pages = {92-102},
+    abstract = {This work addresses the problem of <em> shape completion</em>, i.e., the task of restoring incomplete shapes by predicting their missing parts. While previous works have often predicted the fractured and restored shape in one step, we approach the task by separately predicting the fractured and newly restored parts, but ensuring these predictions are interconnected. We use a decoder network motivated by related work on the prediction of signed distance functions (DeepSDF). In particular, our representation allows us to consider <em> test-time-training</em>, i.e., finetuning network parameters to match the given incomplete shape more accurately during inference. While previous works often have difficulties with artifacts around the fracture boundary, we demonstrate that our overfitting to the fractured parts leads to significant improvements in the restoration of eight different shape categories of the ShapeNet data set in terms of their chamfer distances.}    
+}
+
+%15
+@InProceedings{sterner24,
+    title = {Commute-Time-Optimised Graphs for GNNs},
+    author = {Sterner, Igor and Su, Shiye and Veli{\v{c}}kovi{\'c}, Petar},
+    pages = {103-112 },
+    abstract = {We explore graph rewiring methods that optimise commute time. Recent graph rewiring approaches facilitate long-range interactions in sparse graphs, making such rewirings commute-time-optimal on average. However, when an expert prior exists on which node pairs should or should not interact, a superior rewiring would favour short commute times between these privileged node pairs. We construct two synthetic datasets with known priors reflecting realistic settings, and use these to motivate two bespoke rewiring methods that incorporate the known prior. We investigate the regimes where our rewiring improves test performance on the synthetic datasets. Finally, we perform a case study on a real-world citation graph to investigate the practical implications of our work.}
+}
+
+%17
+@InProceedings{urbano24, 
+    title = {Self-supervised detection of perfect and partial input-dependent symmetries},
+    author = {Urbano, Alonso and Romero, David W.},
+    pages = {113-131},
+    abstract = {Group equivariance can overly constrain models if the symmetries in the group differ from those observed in data. While common methods address this by determining the appropriate level of symmetry at the dataset level, they are limited to supervised settings and ignore scenarios in which multiple levels of symmetry co-exist in the same dataset. In this paper, we propose a method able to detect the level of symmetry of each input without the need for labels. Our framework is general enough to accommodate different families of both continuous and discrete symmetry distributions, such as arbitrary unimodal, symmetric distributions and discrete groups. We validate the effectiveness of our approach on synthetic datasets with different per-class levels of symmetries, and demonstrate practical applications such as the detection of out-of-distribution symmetries.}
+}
+
+%18
+@InProceedings{ali24,
+	title={Metric Learning for Clifford Group Equivariant Neural Networks},
+	author={Ali, Riccardo and Kulyt{\.{e}}, Paulina and S{\'a}ez de Oc{\'a}riz Borde, Haitz and Lio, Pietro},
+    pages= {132-145 },
+	abstract={Clifford Group Equivariant Neural Networks (CGENNs) leverage Clifford algebras and multivectors as an alternative approach to incorporating group equivariance to ensure symmetry constraints in neural representations. In principle, this formulation generalizes to orthogonal groups and preserves equivariance regardless of the metric signature. However, previous works have restricted internal network representations to Euclidean or Minkowski (pseudo-)metrics, handpicked depending on the problem at hand. In this work, we propose an alternative method that enables the metric to be learned in a data-driven fashion, allowing the CGENN network to learn more flexible representations. Specifically, we populate metric matrices fully, ensuring they are symmetric by construction, and leverage eigenvalue decomposition to integrate this additional learnable component into the original CGENN formulation in a principled manner. Additionally, we motivate our method using insights from category theory, which enables us to explain Clifford algebras as a categorical construction and guarantee the mathematical soundness of our approach. We validate our method in various tasks and showcase the advantages of learning more flexible latent metric representations. The code and data are available at \url{https://github.com/rick-ali/Metric-Learning-for-CGENNs}.}
+}
+
+%22
+@InProceedings{nauck24,
+    title = {Dirac–Bianconi Graph Neural Networks – Enabling Non-Diffusive Long-Range Graph Predictions},
+    author = {Nauck, Christian and Gorantla, Rohan and   Lindne, Michael and  Schurholt, Konstantin and Mey, Antonia S. J. S. and Hellmann, Frank},
+    pages= {146-157},
+    abstract = {The geometry of a graph is encoded in dynamical processes on the graph. Many graph neural network (GNN) architectures are inspired by such dynamical systems, typically based on the graph Laplacian. Here, we introduce Dirac–Bianconi GNNs (DBGNNs), which are based on the topological Dirac equation recently proposed by Bianconi. Based on the graph Laplacian, we demonstrate that DBGNNs explore the geometry of the graph in a fundamentally different way than conventional message passing neural networks (MPNNs). While regular MPNNs propagate features diffusively, analogous to the heat equation, DBGNNs allow for coherent long-range propagation. Experimental results showcase the superior performance of DBGNNs over existing conventional MPNNs for long-range predictions of power grid stability and peptide properties. This study highlights the effectiveness of DBGNNs in capturing intricate graph dynamics, providing notable advancements in GNN architectures.}
+}
+
+
+%23
+@InProceedings{jeon24,
+    title = {Leveraging Topological Guidance for Improved Knowledge Distillation},
+    author = {Jeon, Eun Som and Khurana, Rahul and Pathak, Aishani and Turaga, Pavan},
+    pages = {158- 172 },
+    abstract = {Deep learning has shown its efficacy in extracting useful features to solve various computer vision tasks. However, when the structure of the data is complex and noisy, capturing effective information to improve performance is very difficult. To this end, topological data analysis (TDA) has been utilized to derive useful representations that can contribute to improving performance and robustness against perturbations. Despite its effectiveness, the requirements for large computational resources and significant time consumption in extracting topological features through TDA are critical problems when implementing it on small devices. To address this issue, we propose a framework called Topological Guidance-based Knowledge Distillation (TGD), which uses topological features in knowledge distillation (KD) for image classification tasks. We utilize KD to train a superior lightweight model and provide topological features with multiple teachers simultaneously. We introduce a mechanism for integrating features from different teachers and reducing the knowledge gap between teachers and the student, which aids in improving performance. We demonstrate the effectiveness of our approach through diverse empirical evaluations.}
+}
+
+%29
+@InProceedings{kovac24,
+    title = {E(n) Equivariant Message Passing Cellular Networks},
+    author = {Kova\u{c}, Veljko and Bekkers, Erik and Li\'{o}, Pietro and Eijkelboom, Floor},
+    pages = {173-186 },
+    abstract = {This paper introduces E(n) Equivariant Message Passing Cellular Networks (EMPCNs), an extension of E(n) Equivariant Graph Neural Networks to CW-complexes. Our approach addresses two aspects of geometric message passing networks: 1) enhancing their expressiveness by incorporating arbitrary cells, and 2) achieving this in a computationally efficient way with a decoupled EMPCNs technique. We demonstrate that EMPCNs achieve close to state-of-the-art performance on multiple tasks without the need for steerability, including many-body predictions and motion capture. Moreover, ablation studies confirm that decoupled EMPCNs exhibit stronger generalization capabilities than their non-topologically informed counterparts. These findings show that EMPCNs can be used as a scalable and expressive framework for higher-order message passing in geometric and topological graphs}
+}
+
+
+%32
+@InProceedings{lachi24,
+    title = {A Simple and Expressive Graph Neural Network Based Method for Structural Link Representation},
+    author = {Lachi, Veronica and  Ferrini, Francesco and  Longa, Antonio and  Lepri, Bruno and Passerini, Andrea },
+    pages = {187- 201 },
+    abstract = {Graph Neural Networks (GNNs) have achieved state-of-the-art results in tasks like node classification, link prediction, and graph classification. While much research has focused on their ability to distinguish graphs, fewer studies have addressed their capacity to differentiate links, a complex and less explored area. This paper introduces SLRGNN, a novel, theoretically grounded GNN-based method for link prediction. SLRGNN ensures that link representations are distinct if and only if the links have different structural roles within the graph. Our approach transforms the link prediction problem into a node classification problem on the corresponding line graph, enhancing expressiveness without sacrificing efficiency. Unlike existing methods, SLRGNN computes link probabilities in a single inference step, avoiding the need for individual subgraph constructions. We provide a formal proof of our method’s expressiveness and validate its superior performance through experiments on real-world datasets. The code is publicly available1}
+}
+
+%40
+@inproceedings{howland24,
+	title        = {Invertible Temper Modeling using Normalizing Flows and the Effects of Structure Preserving Loss},
+	author       = {Howland, Sylvia and Kappagantula, Keerti-Sahithi and Kvinge, Henry and Emerson, Tegan },
+        pages = {202-211},
+        abstract    = {Advanced manufacturing research and development is typically small-scale, owing to costly experiments associated with these novel processes. Deep learning techniques could help accelerate this development cycle but frequently struggle in small-data regimes like the advanced manufacturing space. While prior work has applied deep learning to modeling visually plausible advanced manufacturing microstructures, little work has been done on data-driven modeling of how microstructures are affected by heat treatment, or assessing the degree to which synthetic microstructures are able to support existing workflows. We propose to address this gap by using invertible neural networks (normalizing flows) to model the effects of heat treatment, e.g., tempering. The model is developed using scanning electron microscope imagery from samples produced using shear-assisted processing and extrusion (ShAPE) manufacturing. This approach not only produces visually and topologically plausible samples, but also captures information related to a sample’s material properties or experimental process parameters. We also demonstrate that topological data analysis, used in prior work to characterize microstructures, can also be used to stabilize model training, preserve structure, and improve downstream results. We assess directions for future work and identify our approach as an important step towards an end-to-end deep learning system for accelerating advanced manufacturing research and development.}
+}
+
+
+
+%43
+@InProceedings{myers24,
+    title = {Topological and Dynamical Representations
+for Radio Frequency Signal Classification},
+    author = {Meyers, Audum and Doster, Timothy and Olson, Colin and Emerson, Tegan},
+    pages = {212-221},
+    abstract = {Radio Frequency (RF) signals are found throughout our world, carrying over-the-air information for both digital and analog uses with applications ranging from WiFi to the radio. One area of focus in RF signal analysis is determining the modulation schemes employed in these signals which is crucial in many RF signal processing domains from secure communication to spectrum monitoring. This work investigates the accuracy and noise robustness of novel Topological Data Analysis (TDA) and dynamic representation based approaches paired with a small convolution neural network for RF signal modulation classification with a comparison to state-of-the-art deep neural network approaches. We show that using TDA tools, like Vietoris-Rips and lower star filtration, and the Takens’ embedding in conjunction with a standard shallow neural network we can capture the intrinsic dynamical, geometric, and topological features of the underlying signal’s manifold, informative representations of the RF signals. Our approach is effective in handling the modulation classification task and is notably noise robust, outperforming the commonly used deep
+neural network approaches in mode classification. Moreover, our fusion of dynamical and topological information is able to attain similar performance to deep neural network architectures with significantly smaller training datasets.}
+}
+
+
+
+%44
+@InProceedings{lavado24,
+    title = {SCENE-Net V2: Interpretable Multiclass 3D Scene Understanding with Geometric Priors},
+    author = {Lavado, Diogo and Soares, Cl\'audia and Micheletti, Alessandra},
+    pages = {222-232},
+    abstract = {In this paper, we present SCENE-Net V2, a new resource-efficient, gray-box model for multiclass 3D scene understanding. SCENE-Net V2 leverages Group Equivariant Non-Expansive Operators (GENEOs) to incorporate fundamental geometric priors as inductive biases, offering a more transparent alternative to the prevalent black-box models in the domain. This model addresses the limitations of its white-box predecessor, SCENE-Net, by expanding its applicability from pole-like structures to a wider range of datasets with detailed 3D elements. Our model achieves the sweet-spot between application and transparency: SCENE-Net V2 is a general method for object identification with interpretability guarantees. Our experimental results demonstrate that SCENE-Net V2 achieves competitive performance with a significantly lower parameter count. Furthermore, we propose the use of GENEO-based architectures as a feature extraction tool for black-box models, enabling an increase in performance by adding a minimal number of meaningful parameters. Our code is available in: https://github.com/dlavado/SCENE-Net-V2.}
+}
+
+
+
+%49
+@InProceedings{gelberg24,
+    title = {Variational Inference Failures Under Model Symmetries: Permutation Invariant Posteriors for Bayesian Neural Networks},
+    author = {Yoav Gelberg and Tycho F. A. van der Ouderaa and Mark van der Wilk and Yarin Gal},
+    pages ={233-248},
+    abstract = {Weight space symmetries in neural network architectures, such as permutation symmetries in MLPs, give rise to Bayesian neural network (BNN) posteriors with many equivalent modes. This multimodality poses a challenge for variational inference (VI) techniques, which typically rely on approximating the posterior with a unimodal distribution. In this work, we investigate the impact of weight space permutation symmetries on VI. We demonstrate, both theoretically and empirically, that these symmetries lead to biases in the approximate posterior, which degrade predictive performance and posterior fit if not explicitly accounted for. To mitigate this behavior, we leverage the symmetric structure of the posterior and devise a symmetrization mechanism for constructing permutation invariant variational posteriors. We show that the symmetrized distribution has a strictly better fit to the true posterior, and that it can be trained using the original ELBO objective with a modified KL regularization term. We demonstrate experimentally that our approach mitigates the aforementioned biases and results in improved predictions and a higher ELBO.}
+}
+
+%50
+@InProceedings{hernandezcaralt24,
+    title = {Joint Diffusion Processes as an Inductive Bias in Sheaf Neural Networks},
+    author={Hernandez Caralt, Ferran and Bern{\'a}rdez Gil, Guillermo and Duta, Iulia and Li{\`o}, Pietro and Alarc{\'o}n Cot, Eduard},
+    pages = {249- 263},
+    abstract = {Sheaf Neural Networks (SNNs) naturally extend Graph Neural Networks (GNNs) by endowing a cellular sheaf over the graph, equipping nodes and edges with vector spaces and defining linear mappings between them. While the attached geometric structure has proven to be useful in analyzing heterophily and oversmoothing, so far the methods by which the sheaf is computed do not always guarantee a good performance in such settings. In this work, drawing inspiration from opinion dynamics concepts, we propose two novel sheaf learning approaches that (i) provide a more intuitive understanding of the involved structure maps, (ii) introduce a useful inductive bias for heterophily and oversmoothing, and (iii) infer the sheaf in a way that does not scale with the number of features, thus using fewer learnable parameters than existing methods. In our evaluation, we show the limitations of the real-world benchmarks used so far on SNNs, and design a new synthetic task --leveraging the symmetries of $n$-dimensional ellipsoids-- that enables us to better assess the strengths and weaknesses of sheaf-based models. 
+    Our extensive experimentation on these novel datasets reveals valuable insights into the scenarios and contexts where basic SNNs and our proposed approaches can be beneficial.}
+}
+
+%52
+@InProceedings{zaghen24,
+    title = {Sheaf Diffusion Goes Nonlinear: Enhancing GNNs with Adaptive Sheaf Laplacians},
+    author = {Zaghen, Olga and Longa, Antonio and Azzolin, Steve and Telyatnikov, Lev and Passerini, Andrea and Li\`o, Pietro},
+    pages = {264- 276},
+    abstract = {Sheaf Neural Networks (SNNs) have recently been introduced to enhance Graph Neural Networks (GNNs) in their capability to learn from graphs. Previous studies either focus on linear sheaf Laplacians or hand-crafted nonlinear sheaf Laplacians. The former are not always expressive enough in modeling complex interactions between nodes, such as antagonistic dynamics and bounded confidence dynamics, while the latter use a fixed nonlinear function that is not adapted to the data at hand. To enhance the capability of SNNs to capture complex node-to-node interactions while adapting to different scenarios, we propose a Nonlinear Sheaf Diffusion (NLSD) model, which incorporates nonlinearity into the Laplacian of SNNs through a general function learned from data. Our model is validated on a synthetic community detection dataset, where it outperforms linear SNNs and common GNN baselines in a node classification task, showcasing its ability to leverage complex network dynamics.}
+}
+
+
+%56
+@InProceedings{syrota24,
+    title = {Decoder ensembling for learned latent geometries},
+    author = {Syrota, Stas and Moreno-Mu{\~ n}oz, Pablo and Hauberg, S\oren},
+    pages = {277-285 },
+    abstract = {Latent space geometry provides a rigorous and empirically valuable framework for interacting with the latent variables of deep generative models. This approach reinterprets Euclidean latent spaces as Riemannian through a pull-back metric, allowing for a standard differential geometric analysis of the latent space. Unfortunately, data manifolds are generally compact and easily disconnected or filled with holes, suggesting a topological mismatch to the Euclidean latent space. The most established solution to this mismatch is to let uncertainty be a proxy for topology, but in neural network models, this is often realized through crude heuristics that lack principle and generally do not scale to high-dimensional representations. We propose using ensembles of decoders to capture model uncertainty and show how to easily compute geodesics on the associated expected manifold. Empirically, we find this simple and reliable, thereby coming one step closer to easy-to-use latent geometries.}
+}
+
+%58
+@InProceedings{ranum24,
+    title = {The NGT200 Dataset: Geometric Multi-View Isolated Sign Recognition},
+    author = {Ranum, Oline and Wessels, David R. and Otterspeer, Gomer and Bekkers, Erik J. and Roelofsen, Floris and Andersen, Jari I.},
+    pages = {286-302},
+    abstract = {Sign Language Processing (SLP) provides a foundation for a more inclusive future in language technology; however, the field faces several significant challenges that must be addressed to achieve practical, real-world applications. This work addresses multi-view isolated sign recognition (MV-ISR), and highlights the essential role of 3D awareness and geometry in SLP systems.  We introduce the NGT200 dataset, a novel spatio-temporal multi-view benchmark, establishing MV-ISR as distinct from single-view ISR (SV-ISR). We demonstrate the benefits of synthetic data and propose conditioning sign representations on spatial symmetries inherent in sign language. Leveraging an SE(2) equivariant model improves MV-ISR performance by 8-22 percent  over the baseline.}
+}
+
+%61
+@inproceedings{roos24,
+	title = {On Fairly Comparing Group Equivariant Networks},
+	author = {Roos, Lucas and Kroon, Steve},
+        pages = {303-317},
+	abstract = {This paper investigates the flexibility of Group Equivariant Convolutional Neural Networks (G-CNNs), which specialize conventional neural networks by encoding equivariance to group transformations. Inspired by splines, we propose new metrics to assess the complexity of ReLU networks and use them to quantify and compare the flexibility of networks equivariant to different groups. Our analysis suggests that the current practice of comparing networks by fixing the number of trainable parameters unfairly affords models equivariant to larger groups additional expressivity. Instead, we advocate for comparisons based on a fixed computational budget---which we empirically show results in more similar levels of network flexibility. This approach allows one to better disentangle the impact of constraining networks to be equivariant from the increased expressivity they are typically granted in the literature, enabling one to obtain a more nuanced view of the impact of enforcing equivariance. Interestingly, our experiments indicate that enforcing equivariance results in <em>more</em> complex fitted functions even when controlling for compute, despite reducing network expressivity.}
+}
+
+
+%78
+@InProceedings{sakamoto24,
+    title = {The Geometry of Diffusion Models: Tubular Neighbourhoods and Singularities},
+    author = {Sakamoto, Kotaro and Sakamoto, Ryosuke and Tanabe, Masato and Akagawa, Masatomo and Hayashi, Yusuke and Yaguchi, Manato and Suzuki, Masahiro and Matsuo, Yutaka},
+    pages = {332-363 },
+    abstract = {Diffusion generative models have been a leading approach for generating high-dimensional data. The current research aims to investigate the relation between the dynamics of diffusion models and the tubular neighbourhoods of a data manifold. We propose an algorithm to estimate the injectivity radius, the supremum of radii of tubular neighbourhoods. Our research relates geometric objects such as curvatures of data manifolds and dimensions of ambient spaces, to singularities of the generative dynamics such as emergent critical phenomena or spontaneous symmetry breaking.}
+}
+
+%84
+@InProceedings{kothapalli24,
+    title = {Equivariant vs. Invariant Layers: A Comparison of Backbone and Pooling for Point Cloud Classification},
+    author={Kothapalli, Abihith and Shahbazi, Ashkan and Liu, Xinran and Sheng, Robert and Kolouri, Soheil},
+    pages ={364-380},
+    abstract={Learning from set-structured data, such as point clouds, has gained significant attention from the machine learning community. Geometric deep learning provides a blueprint for designing effective set neural networks that preserve the permutation symmetry of set-structured data. Of our interest are permutation invariant networks, which are composed of a permutation equivariant backbone, permutation invariant global pooling, and regression/classification head. While existing literature has focused on improving equivariant backbones, the impact of the pooling layer is often overlooked. In this paper, we examine the interplay between permutation equivariant backbones and permutation invariant global pooling on three benchmark point cloud classification datasets. Our findings reveal that: 1) complex pooling methods, such as transport-based or attention-based poolings, can significantly boost the performance of simple backbones, but the benefits diminish for more complex backbones, 2) even complex backbones can benefit from pooling layers in low data scenarios, 3) surprisingly, the choice of pooling layers can have a more significant impact on the model's performance than adjusting the width and depth of the backbone, and 4) pairwise combination of pooling layers can significantly improve the performance of a fixed backbone. Our comprehensive study provides insights for practitioners to design better permutation invariant set neural networks. Our code is available at https://github.com/mint-vu/backbone_vs_pooling.}
+}
+
+
+%89
+@InProceedings{sotiropoulou24,
+title={Strongly Isomorphic Neural Optimal Transport Across Incomparable Spaces},
+author={Sotiropoulou, Athina and Alvarez-Melis, David},
+pages = {381-393},
+abstract = {Optimal Transport (OT) has recently emerged as a powerful framework for learning minimal-displacement maps between distributions. The predominant approach involves a neural parametrization of the Monge formulation of OT, typically assuming the same space for both distributions. However, the setting across ``incomparable spaces'' (e.g., of different dimensionality), corresponding to the Gromov-Wasserstein distance, remains underexplored, with existing methods often imposing restrictive assumptions on the cost function. In this paper, we present a novel neural formulation of the Gromov-Monge (GM) problem rooted in one of its fundamental properties: invariance to strong isomorphisms. We operationalize this property by decomposing the learnable OT map into two components: (i) an approximate strong isomorphism between the source distribution and an intermediate reference distribution, and (ii) a GM-optimal map between this reference and the target distribution. Our formulation leverages and extends the Monge gap regularizer of \citet{gap_monge} to eliminate the need for complex architectural requirements of other neural OT methods, yielding a simple but practical method that enjoys favorable theoretical guarantees. Our preliminary empirical results show that our framework provides a promising approach to learn OT maps across diverse spaces.}
+}
+
+%94
+@InProceedings{inal24,
+	title={Adaptive Sampling for Continuous Group Equivariant Neural Networks},
+	author={Inal, Berfin and Cesa, Gabriele},
+        pages = {394- 419},
+	abstract={Steerable networks, which process data with intrinsic symmetries, often use Fourier-based non-linearities that require sampling from the entire group, leading to a need for discretization in continuous groups. As the number of samples increases, both performance and equivariance improve, yet this also leads to higher computational costs. To address this, we introduce an adaptive sampling approach that dynamically adjusts the sampling process to the symmetries in the data, reducing the number of required group samples and lowering the computational demands. We explore various implementations and their effects on model performance, equivariance, and computational efficiency. Our findings demonstrate improved model performance, and a marginal increase in memory efficiency}
+}
+
+%97
+@InProceedings{wu2024,
+    title = {Graph Convolutional Networks for Learning Laplace-Beltrami Operators},
+    author = {Wu, Yingying and Fu, Roger and Peng, Yang and Chen, Qifeng},
+    pages = {318-331},
+    abstract = {Recovering a high-level representation of geometric data is a fundamental goal in geometric modeling and computer graphics. In this paper, we introduce a data-driven approach to computing the spectrum of the Laplace-Beltrami operator of triangle meshes using graph convolutional networks. Specifically, we train graph convolutional networks on a large-scale dataset of synthetically generated triangle meshes, encoded with geometric data consisting of Voronoi areas, normalized edge lengths, and the Gauss map, to infer eigenvalues of 3D shapes. We attempt to address the ability of graph neural networks to capture global shape descriptors–including spectral information–that were previously inaccessible using existing methods from computer vision, and our paper exhibits promising signals suggesting that Laplace-Beltrami eigenvalues on discrete surfaces can be learned. Additionally, we perform ablation studies showing the addition of geometric data leads to improved accuracy.}
+}
+
+%100
+@InProceedings{bernardez24,
+    title = {ICML Topological Deep Learning Challenge 2024: Beyond the Graph Domain},
+    author={Bern\'ardez, Guillermo and Telyatnikov, Lev and Montagna, Marco and Baccini, Federica and Papillon, Mathilde and Ferriol-Galm\'es, Miquel and Hajij, Mustafa and Papamarkou, Theodore and Bucarelli, Maria Sofia and Zaghen, Olga and Mathe, Johan and Myers, Audun and Mahan, Scott and Lillemark, Hansen and Vadgama, Sharvaree and Bekkers, Erik and Doster, Tim and Emerson, Tegan and Kvinge, Henry and Agate, Katrina and Ahmed, Nesreen K and Bai, Pengfei and Banf, Michael and Battiloro, Claudio and Beketov, Maxim and Bogdan, Paul and Carrasco, Martin and Cavallo, Andrea and Choi, Yun Young and Dasoulas, George and Elphick, Matou\u{s} and Escalona, Giordan and Filipiak, Dominik and Fritze, Halley and Gebhart, Thomas and Gil-Sorribes, Manel and Goomanee, Salvish and Guallar, Victor and Imasheva, Liliya and Irimia, Andrei and Jin, Hongwei and Johnson, Graham and Kanakaris, Nikos and Koloski, Boshko and Kova\u{c}, Veljko and Lecha, Manuel and Lee, Minho and Leroy, Pierrick and Long, Theodore and Magai, German and Martinez, Alvaro and Masden, Marissa and Me\u{z}nar, Sebastian and Miquel-Oliver, Bertran and Molina, Alexis and Nikitin, Alexander and Nurisso, Marco and Piekenbrock, Matt and Qin, Yu and Rygiel, Patryk and Salatiello, Alessandro and Schattauer, Max and Snopov, Pavel and Suk, Julian and S\'anchez, Valentina and Tec, Mauricio and Vaccarino, Francesco and Verhellen, Jonas and Wantiez, Frederic and Weers, Alexander and Zajec, Patrik and \u{S}krlj, Bla\u{z} and Miolane, Nina},
+    pages = {420-428 },
+    abstract = {This paper describes the 2nd edition of the ICML Topological Deep Learning Challenge that was hosted within the ICML 2024 ELLIS Workshop on Geometry-grounded Representation Learning and Generative Modeling (GRaM). The challenge focused on the problem of representing data in different discrete topological domains in order to bridge the gap between Topological Deep Learning (TDL) and other types of structured datasets (e.g. point clouds, graphs). Specifically, participants were asked to design and implement topological liftings, i.e. mappings between different data structures and topological domains –like hypergraphs, or simplicial/cell/combinatorial complexes. The challenge received 52 submissions satisfying all the requirements. This paper introduces the main scope of the challenge, and summarizes the main results and findings.}
+}
