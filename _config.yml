@@ -4,7 +4,7 @@ booktitle: Proceedings of the Geometry-grounded Representation Learning and Gene
 shortname: GRaM Workshop
 volume: '251'
 year: '2024'
-start: &1 2024-07-29
+start: 2024-07-29
 end: 2024-07-29
 published: 2024-10-12
 conference_number: '1'
@@ -97,7 +97,7 @@ conference:
   url: https://openreview.net/group?id=ICML.cc/2024/Workshop/GRaM
   location: Vienna, Asutria
   dates:
-  - *1
+  - 2024-07-29
 analytics:
   google:
     tracking_id: UA-92432422-1
